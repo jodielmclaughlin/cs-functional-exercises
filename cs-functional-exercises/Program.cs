@@ -14,8 +14,11 @@
             //string secondWord = "pale";
             //Console.WriteLine(Exercise001.SumIndices(firstWord, secondWord));
 
-            Exercise001.CheckValidEmail("jodiemclaughlin@northcoders.co.uk");
-            Exercise001.CheckValidEmail("jodi@northcoders.co.uk");
+            //Exercise001.CheckValidEmail("jodiemclaughlin@northcoders.co.uk");
+            //Exercise001.CheckValidEmail("jodi@northcoders.co.uk");
+            List<string> coolPeople = new List<string> {"rich.neat@boardgamer.com", "poppy.mcdonnell@irishdancer.com",
+            "neil.hughes@walkingoncustard.com", "alice.yang@midfielder.com", "pippa.austin@musician.com"};
+            coolPeople.ForEach(Exercises002.GetUsernames);
 
         }
     }

@@ -24,7 +24,9 @@ namespace cs_functional_exercises
             Predicate<string> whereFrom = email => email.Contains("@northcoders.co.uk");
            
             string username = email.Split('@')[0];
+            
             Predicate<string> usernameCheck = username => username.Length >= 5;
+            
             if(whereFrom(email) && usernameCheck(username))
             {
                 Console.WriteLine("Email domain and user valid, please continue");
