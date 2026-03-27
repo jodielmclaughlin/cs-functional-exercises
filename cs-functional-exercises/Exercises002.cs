@@ -12,6 +12,8 @@ namespace cs_functional_exercises
             "neil.hughes@walkingoncustard.com", "alice.yang@midfielder.com", "pippa.austin@musician.com"};
 
         public static Action<string> GetUsernames = users => Console.WriteLine(users.Split("@")[0]);
+
+        public static Action<List<string>> PrintCoolPeople = people => people.ForEach(n => Console.WriteLine(n));
        
     }
 }
