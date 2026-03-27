@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -16,7 +17,7 @@ namespace cs_functional_exercises
         
         public static Predicate<string> GrammarCheck = word => word.StartsWith("A") && word.EndsWith("!");
 
+        public static Func<string, string, int> SumIndices = (wordA, wordB) => wordA.IndexOf("a") + wordB.IndexOf("e");
 
-            
     }
 }

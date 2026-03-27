@@ -9,6 +9,10 @@
 
             List<string> words = new List<string> { "Amazing!", "apple!", "Awesome!", "Artichoke" };
             words.ForEach(n => Console.WriteLine(Exercise001.GrammarCheck(n)));
+
+            string firstWord = "start";
+            string secondWord = "pale";
+            Console.WriteLine(Exercise001.SumIndices(firstWord, secondWord));
         }
     }
 }

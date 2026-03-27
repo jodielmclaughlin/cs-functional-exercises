@@ -33,5 +33,16 @@ namespace cs_functional_exercises.Test
 
             results.ShouldBe(expected);
         }
+        [Test]
+        public void SumIndices_ShouldAddIndexsOfStringCharsToReturnInt()
+        {
+            string wordA = "start";
+            string wordB = "pale";
+
+            int expected = 5;
+            int result = Exercise001.SumIndices(wordA, wordB);
+
+            result.ShouldBe(expected);
+        }
     }
 }
