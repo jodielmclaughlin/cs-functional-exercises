@@ -27,5 +27,14 @@ namespace cs_functional_exercises
 
         public static Action<List<int>> PrintSquaredNums = nums => { SquaredNums(nums); PrintNums(nums); };
 
+        public static Dictionary<string, List<string>> FilterEmails(List<string> emails)
+        {
+            Dictionary<string, List<string>> emailAddresses = new Dictionary<string, List<string>>();
+            Predicate<string> coUkDomain = emails => emails.Contains(".co.uk");
+            Predicate<string> comDomain = email => email.Contains("com");
+
+
+
+        }
     }
 }
