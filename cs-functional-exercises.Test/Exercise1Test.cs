@@ -44,5 +44,27 @@ namespace cs_functional_exercises.Test
 
             result.ShouldBe(expected);
         }
+        [Test]
+        public void CheckValidEmail_ShouldCheckEmailIsValid()
+        {
+            string email = "jodie.mclaughlin@northcoders.co.uk";
+            
+
+            string expected = "Email domain and user valid, please continue";
+            string result = Exercise001.CheckValidEmail(email);
+
+            result.ShouldBe(expected);
+        }
+        [Test]
+        public void CheckValidEmail_ShouldCheckEmailIsInValid()
+        {
+            string email = "jodi@northcoders.co.uk";
+
+
+            string expected = "Email domain and user name invalid, please check your input";
+            string result = Exercise001.CheckValidEmail(email);
+
+            result.ShouldBe(expected);
+        }
     }
 }

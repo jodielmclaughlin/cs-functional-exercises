@@ -19,5 +19,20 @@ namespace cs_functional_exercises
 
         public static Func<string, string, int> SumIndices = (wordA, wordB) => wordA.IndexOf("a") + wordB.IndexOf("e");
 
+        public static string CheckValidEmail(string email)
+        {
+            Predicate<string> whereFrom = email => email.Contains("@northcoders.co.uk");
+           
+            string username = email.Split('@')[0];
+            Predicate<string> usernameCheck = username => username.Length >= 5;
+            if(whereFrom(email) && usernameCheck(username))
+            {
+                Console.WriteLine("Email domain and user valid, please continue");
+                return "Email domain and user valid, please continue";
+            }
+            Console.WriteLine("Email domain and user name invalid, please check your input");
+            return "Email domain and user name invalid, please check your input";
+        }
+
     }
 }
