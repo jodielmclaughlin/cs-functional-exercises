@@ -4,10 +4,8 @@
     {
         static void Main(string[] args)
         {
-
-            List<string> newList = Exercises002.GetCoolPeople();
-            Exercises002.PrintCoolPeople(newList);
-
+            List<int> numList = new List<int> { 5, 8, 3, 6, 67 };
+            Exercises002.PrintSquaredNums(numList);
 
         }
     }
